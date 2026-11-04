@@ -36,8 +36,8 @@
   function view(p) {
     var ms = p.microsite || {}, specs = p.specs || {};
     var ops = ms.available ? (ms.operations || []).map(function (o) { return o === 'rent' ? 'alquiler' : 'venta'; }) : [];
-    var rent = ops.indexOf('alquiler') > -1 && p.valueForRent ? p.valueForRent : null;
-    var sale = ops.indexOf('venta') > -1 && p.valueForSale ? p.valueForSale : null;
+    var rent = ops.indexOf('alquiler') > -1 && p.valueForRent && p.valueForRent.amount > 0 ? p.valueForRent : null; // 0 = sin valor cargado
+    var sale = ops.indexOf('venta') > -1 && p.valueForSale && p.valueForSale.amount > 0 ? p.valueForSale : null;
     var det = p.summary;
     if (!det) {
       var bits = [];
