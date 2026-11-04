@@ -10,7 +10,7 @@
     function collect() {
       return Array.prototype.map.call(document.querySelectorAll('.list > li'), function (li) {
         var lat = parseFloat(li.getAttribute('data-lat')), lng = parseFloat(li.getAttribute('data-lng'));
-        return {li: li, ll: isNaN(lat) || isNaN(lng) ? null : [lat, lng], rent: li.getAttribute('data-op').split(' ').indexOf('alquiler') > -1};
+        return {li: li, ll: isNaN(lat) || isNaN(lng) ? null : [lat, lng], kind: li.hasAttribute('data-off') ? 'off' : li.getAttribute('data-op').split(' ').indexOf('alquiler') > -1 ? 'alq' : ''};
       });
     }
 
@@ -38,8 +38,8 @@
       return ready;
     }
 
-    function icon(rent, sel) {
-      return L.divIcon({className: '', html: '<span class="pin' + (rent ? ' pin--alq' : '') + (sel ? ' sel' : '') + '"></span>', iconSize: [24, 24], iconAnchor: [12, 12]});
+    function icon(kind, sel) {
+      return L.divIcon({className: '', html: '<span class="pin' + (kind ? ' pin--' + kind : '') + (sel ? ' sel' : '') + '"></span>', iconSize: [24, 24], iconAnchor: [12, 12]});
     }
     function init() {
       if (map) return;
@@ -63,8 +63,10 @@
       var img = li.querySelector('img').cloneNode();
       img.alt = ''; img.removeAttribute('loading');
       var t = document.createElement('div');
+      var bn = li.querySelector('.banner');
+      if (bn) { var bd = document.createElement('span'); bd.className = 'mbadge mbadge--' + (bn.className.indexOf('banner--ven') > -1 ? 'ven' : 'alq'); bd.textContent = bn.textContent; t.appendChild(bd); }
       var h = document.createElement('h2'); h.textContent = li.querySelector('h2').textContent;
-      var p = document.createElement('p'); p.textContent = li.querySelector('.loc').textContent + '. ' + li.querySelector('.det').textContent;
+      var p = document.createElement('p'); var det = li.querySelector('.det'); p.textContent = li.querySelector('.loc').textContent + (det ? '. ' + det.textContent : '');
       var pr = document.createElement('p'); pr.className = 'mprice'; pr.innerHTML = li.querySelector('.price').innerHTML;
       t.appendChild(h); t.appendChild(p); t.appendChild(pr);
       var act = document.createElement('div'); act.className = 'mact';
@@ -86,7 +88,7 @@
       cluster.clearLayers(); markers = []; cardsEl.textContent = ''; selected = -1;
       sheet.classList.remove('on');
       withLoc.forEach(function (it, i) {
-        var m = L.marker(it.ll, {icon: icon(it.rent, false), title: it.li.querySelector('h2').textContent, keyboard: true});
+        var m = L.marker(it.ll, {icon: icon(it.kind, false), title: it.li.querySelector('h2').textContent, keyboard: true});
         m.on('click', function () { select(i, true); });
         markers.push(m); cluster.addLayer(m); cardsEl.appendChild(card(it));
       });
@@ -103,9 +105,9 @@
     var withLocItems = function () { return visible().filter(function (it) { return it.ll; }); };
     function select(i, scrollCard) {
       if (i < 0 || i >= markers.length) return;
-      if (selected > -1 && markers[selected]) markers[selected].setIcon(icon(withLocItems()[selected].rent, false));
+      if (selected > -1 && markers[selected]) markers[selected].setIcon(icon(withLocItems()[selected].kind, false));
       selected = i;
-      markers[i].setIcon(icon(withLocItems()[i].rent, true));
+      markers[i].setIcon(icon(withLocItems()[i].kind, true));
       sheet.classList.add('on');
       if (scrollCard) {
         var c = cardsEl.children[i];
@@ -114,7 +116,7 @@
       cluster.zoomToShowLayer(markers[i], function () { focusOn(markers[i].getLatLng()); });
     }
     function deselect() {
-      if (selected > -1 && markers[selected]) markers[selected].setIcon(icon(withLocItems()[selected].rent, false));
+      if (selected > -1 && markers[selected]) markers[selected].setIcon(icon(withLocItems()[selected].kind, false));
       selected = -1; sheet.classList.remove('on');
     }
     var scrollTimer;

@@ -196,7 +196,12 @@
 
 
   /* ── propiedades que ya no están disponibles (alquiladas / vendidas) ── */
-  .tag--off { background: #fff; color: var(--ink-2); }
-  .tag--off i { background: var(--ink-2); }
-  .card--off .card-media img { filter: grayscale(.85); opacity: .75; }
+  .banner { position: absolute; inset: 0 0 auto 0; padding: 10px 14px; text-align: center; color: #fff; font-weight: 700; font-size: 13px; letter-spacing: .14em; text-transform: uppercase; box-shadow: 0 4px 14px rgba(20, 22, 92, .25); }
+  .banner--alq { background: var(--indigo); }
+  .banner--ven { background: #0b6b46; }
+  .card--off .card-media img { filter: grayscale(.7) brightness(.92); }
+  .mbadge { display: inline-block; margin-bottom: 4px; padding: 2px 8px; border-radius: 6px; color: #fff; font-size: 11px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+  .mbadge--alq { background: var(--indigo); }
+  .mbadge--ven { background: #0b6b46; }
+  .pin--off { background: #8a8fb5; }
   .card--off .price span { font-size: .9rem; }

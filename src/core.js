@@ -53,6 +53,7 @@
     var tag;
     if (ms.available) tag = ops.length > 1 ? ['alq', 'Alquiler y venta'] : ops[0] === 'alquiler' ? ['alq', 'Alquiler'] : ['ven', 'Venta'];
     else tag = ['off', OFF[ms.status] || 'No disponible'];
+    var offKind = ms.available ? null : (ms.status === 'VENDIDA' ? 'ven' : 'alq');
     var price;
     if (!ms.available) price = '<span>Ya no está disponible</span>';
     else if (!rent && !sale) price = '<strong>Consultar valor</strong>';
@@ -65,7 +66,7 @@
     return {
       id: p._id, href: ms.url, title: p.title, loc: [p.address, city].filter(Boolean).join(', '), det: det,
       img: p.imgCover && p.imgCover.thumbWeb, alt: (p.imgCover && p.imgCover.alt) || p.title,
-      ops: ops, off: !ms.available, tag: tag, price: price,
+      ops: ops, off: offKind, tag: tag, price: price,
       pl: city ? {slug: slug(city), name: city} : null, tipo: g,
       dorm: specs.bedrooms || 0, pr: rent ? Math.round(rent.amount) : null, pv: sale ? Math.round(sale.amount) : null,
       rentCur: rent && rent.currency, lat: p.lat, lng: p.lng
@@ -83,7 +84,7 @@
       (v.lat != null && v.lng != null ? ' data-lat="' + v.lat + '" data-lng="' + v.lng + '"' : '') + (v.off ? ' data-off' : '');
     return '<li' + attrs + '><article class="card' + (v.off ? ' card--off' : '') + '"><a class="card-link" href="' + esc(v.href) + '">' +
       '<div class="card-media">' + (v.img ? '<img src="' + esc(v.img) + '" width="900" height="720" loading="lazy" decoding="async" alt="' + esc(v.alt) + '">' : '') +
-      '<span class="tag tag--' + v.tag[0] + '"><i></i>' + esc(v.tag[1]) + '</span></div>' +
+      (v.off ? '<span class="banner banner--' + v.off + '">' + esc(v.tag[1]) + '</span>' : '<span class="tag tag--' + v.tag[0] + '"><i></i>' + esc(v.tag[1]) + '</span>') + '</div>' +
       '<div class="card-body"><h2>' + esc(v.title) + '</h2><p class="loc">' + esc(v.loc) + '</p>' + (v.det ? '<p class="det">' + esc(v.det) + '</p>' : '') +
       '<p class="price">' + v.price + '</p></div></a>' +
       (v.pr ? '<button type="button" class="calc-btn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M8 6h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15h.01M8 18h.01M12 18h.01M16 18h.01"/></svg>Calculadora de condiciones</button>' : '') +
