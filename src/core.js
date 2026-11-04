@@ -55,9 +55,13 @@
     else tag = ['off', OFF[ms.status] || 'No disponible'];
     var price;
     if (!ms.available) price = '<span>Ya no está disponible</span>';
-    else if (rent) price = '<strong>' + esc(rent.currency) + ' ' + money(rent.amount) + '</strong> <span>por mes</span>' + (sale ? ' <span>· venta ' + esc(sale.currency) + ' ' + money(sale.amount) + '</span>' : '');
-    else if (sale) price = '<strong>' + esc(sale.currency) + ' ' + money(sale.amount) + '</strong>';
-    else price = '<strong>Consultar valor</strong>';
+    else if (!rent && !sale) price = '<strong>Consultar valor</strong>';
+    else {
+      /* alquiler y venta a la vez: el valor que no es público dice "consultar" */
+      var both = ops.length > 1;
+      if (rent) price = '<strong>' + esc(rent.currency) + ' ' + money(rent.amount) + '</strong> <span>por mes</span>' + (both ? ' <span>· venta ' + (sale ? esc(sale.currency) + ' ' + money(sale.amount) : 'consultar') + '</span>' : '');
+      else price = '<strong>' + esc(sale.currency) + ' ' + money(sale.amount) + '</strong>' + (both ? ' <span>venta · alquiler consultar</span>' : '');
+    }
     return {
       id: p._id, href: ms.url, title: p.title, loc: [p.address, city].filter(Boolean).join(', '), det: det,
       img: p.imgCover && p.imgCover.thumbWeb, alt: (p.imgCover && p.imgCover.alt) || p.title,
