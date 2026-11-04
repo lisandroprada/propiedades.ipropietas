@@ -30,7 +30,8 @@
    "valueForRent": {
     "amount": 500000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "anniejones662",
@@ -62,7 +63,8 @@
    "valueForRent": {
     "amount": 650000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "2deabril",
@@ -94,7 +96,8 @@
    "valueForSale": {
     "amount": 28000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "palacios224",
@@ -126,7 +129,8 @@
    "valueForSale": {
     "amount": 76000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "boer1353",
@@ -158,7 +162,8 @@
    "valueForSale": {
     "amount": 150000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "donroberto1469",
@@ -190,7 +195,8 @@
    "valueForRent": {
     "amount": 750000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "altebrown",
@@ -222,7 +228,8 @@
    "valueForRent": {
     "amount": 600000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "casaquintana",
@@ -254,7 +261,8 @@
    "valueForSale": {
     "amount": 68000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "castelli",
@@ -286,7 +294,8 @@
    "valueForRent": {
     "amount": 950000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "juanjosevalle375",
@@ -318,7 +327,8 @@
    "valueForRent": {
     "amount": 680000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "musters725",
@@ -350,7 +360,8 @@
    "valueForSale": {
     "amount": 110000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "casacentenario",
@@ -382,7 +393,8 @@
    "valueForSale": {
     "amount": 180000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "mendoza",
@@ -414,7 +426,8 @@
    "valueForSale": {
     "amount": 250000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "chacra51",
@@ -440,7 +453,8 @@
      "sale"
     ],
     "available": true
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "loveparry",
@@ -472,7 +486,8 @@
    "valueForSale": {
     "amount": 70000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Trelew"
   },
   {
    "_id": "dptospueyrredon",
@@ -504,7 +519,8 @@
    "valueForSale": {
     "amount": 80000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "duplexribera",
@@ -536,7 +552,8 @@
    "valueForSale": {
     "amount": 80000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Playa Unión"
   },
   {
    "_id": "goicochea1399",
@@ -568,7 +585,8 @@
    "valueForSale": {
     "amount": 75000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "castelli379",
@@ -600,7 +618,8 @@
    "valueForSale": {
     "amount": 130000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "mendoza836",
@@ -632,7 +651,8 @@
    "valueForSale": {
     "amount": 140000,
     "currency": "USD"
-   }
+   },
+   "barrio": "Rawson"
   },
   {
    "_id": "edificioalternativa",
@@ -664,7 +684,8 @@
    "valueForRent": {
     "amount": 850000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Puerto Rawson"
   },
   {
    "_id": "casadelariberaii",
@@ -697,7 +718,8 @@
    "valueForRent": {
     "amount": 680000,
     "currency": "ARS"
-   }
+   },
+   "barrio": "Playa Unión"
   }
  ],
  "meta": {

@@ -48,7 +48,7 @@
       if (m2) bits.push(Math.round(m2) + ' m²');
       det = bits.join(' · ');
     }
-    var city = p.locality && p.locality.name;
+    var zone = String(p.barrio || '').trim(); // el filtro de zona es el campo Barrio / Sector de la ficha
     var g = group(p.type);
     var tag;
     if (ms.available) tag = ops.length > 1 ? ['alq', 'Alquiler y venta'] : ops[0] === 'alquiler' ? ['alq', 'Alquiler'] : ['ven', 'Venta'];
@@ -64,10 +64,10 @@
       else price = '<strong>' + esc(sale.currency) + ' ' + money(sale.amount) + '</strong>' + (both ? ' <span>venta · alquiler consultar</span>' : '');
     }
     return {
-      id: p._id, href: ms.url, title: p.title, loc: [p.address, city].filter(Boolean).join(', '), det: det,
+      id: p._id, href: ms.url, title: p.title, loc: [p.address, zone || (p.locality && p.locality.name)].filter(Boolean).join(', '), det: det,
       img: p.imgCover && p.imgCover.thumbWeb, alt: (p.imgCover && p.imgCover.alt) || p.title,
       ops: ops, off: offKind, tag: tag, price: price,
-      pl: city ? {slug: slug(city), name: city} : null, tipo: g,
+      pl: zone && slug(zone) ? {slug: slug(zone), name: zone} : null, tipo: g,
       dorm: specs.bedrooms || 0, pr: rent ? Math.round(rent.amount) : null, pv: sale ? Math.round(sale.amount) : null,
       rentCur: rent && rent.currency, lat: p.lat, lng: p.lng
     };
@@ -122,8 +122,9 @@
     var avail = vs.filter(function (v) { return !v.off; });
     var groups = GROUPS.filter(function (g) { return vs.some(function (v) { return v.tipo === g; }); });
     var zones = [], seen = {};
-    vs.forEach(function (v) { if (v.pl && !seen[v.pl.slug]) { seen[v.pl.slug] = 1; zones.push(v.pl); } });
-    zones.sort(function (a, b) { return a.name.localeCompare(b.name, 'es'); });
+    vs.forEach(function (v) { if (v.pl) { if (!seen[v.pl.slug]) { seen[v.pl.slug] = {z: v.pl, n: 0}; zones.push(seen[v.pl.slug]); } seen[v.pl.slug].n++; } });
+    zones.sort(function (a, b) { return b.n - a.n || a.z.name.localeCompare(b.z.name, 'es'); }); // las zonas con más propiedades primero
+    zones = zones.map(function (e) { return e.z; });
     var maxDorm = Math.max.apply(null, [0].concat(vs.map(function (v) { return v.dorm; })));
     var dorms = [[0, 'Cualquiera']].concat([1, 2, 3, 4].filter(function (n) { return n <= maxDorm; }).map(function (n) { return [n, n + '+']; }));
     return {
