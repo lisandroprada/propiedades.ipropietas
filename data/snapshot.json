@@ -1,0 +1,707 @@
+{
+ "items": [
+  {
+   "_id": "ameghinoyguemes",
+   "title": "Dpto en la esquina",
+   "address": "Ameghino y Güemes",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/ameghinoyguemes.jpg",
+    "alt": "Frente del edificio con escalera exterior y balcón"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios, balcón y 45 m²",
+   "microsite": {
+    "url": "https://ameghinoyguemes.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.296575,
+   "lng": -65.091405,
+   "valueForRent": {
+    "amount": 500000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "anniejones662",
+   "title": "Dúplex en Playa Unión",
+   "address": "Annie Jones 662",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "DUPLEX",
+   "imgCover": {
+    "thumbWeb": "img/lg/anniejones662.jpg",
+    "alt": "Living con ventanal al balcón"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios, 2 baños y 80 m²",
+   "microsite": {
+    "url": "https://anniejones662.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.308479,
+   "lng": -65.046864,
+   "valueForRent": {
+    "amount": 650000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "2deabril",
+   "title": "Tu primer depto",
+   "address": "Barrio 2 de Abril, Av. San Martín",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/2deabril.jpg",
+    "alt": "Fachada del edificio de departamentos en el barrio 2 de Abril"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios y 45 m²",
+   "microsite": {
+    "url": "https://2deabril.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.296781,
+   "lng": -65.092678,
+   "valueForSale": {
+    "amount": 28000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "palacios224",
+   "title": "Casa con rosal y patio",
+   "address": "Tte. Cnel. Palacios 224",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/palacios224.jpg",
+    "alt": "Frente de la casa con camino de piedra, césped y rosal en flor"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "3 dormitorios, 2 baños y 250 m² de terreno",
+   "microsite": {
+    "url": "https://palacios224.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.297307,
+   "lng": -65.088278,
+   "valueForSale": {
+    "amount": 76000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "boer1353",
+   "title": "Casa con local",
+   "address": "Av. Coronel Boer 1353",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/boer1353.jpg",
+    "alt": "Frente de la propiedad sobre la avenida Coronel Boer, con el local"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "Terreno de 255 m² y vivienda de 2 dormitorios",
+   "microsite": {
+    "url": "https://boer1353.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.322544,
+   "lng": -65.050958,
+   "valueForSale": {
+    "amount": 150000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "donroberto1469",
+   "title": "Casa en Playa Unión",
+   "address": "Embarcación Don Roberto 1469, Rawson",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/donroberto1469.jpg",
+    "alt": "Frente de una casa de una planta con pérgola y senda de baldosas"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios y patio con parrilla",
+   "microsite": {
+    "url": "https://donroberto1469.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.322573,
+   "lng": -65.055075,
+   "valueForRent": {
+    "amount": 750000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "altebrown",
+   "title": "Depto de 3 dormitorios",
+   "address": "Edificio Almirante Brown",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/altebrown.jpg",
+    "alt": "Living vacío con ventanas sobre el patio"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "55 m² cubiertos y cocina independiente",
+   "microsite": {
+    "url": "https://altebrown.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.299994,
+   "lng": -65.099307,
+   "valueForRent": {
+    "amount": 600000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "casaquintana",
+   "title": "Casa en el centro",
+   "address": "Manuel Quintana 707",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/casaquintana.jpg",
+    "alt": "Frente de una casa de paredes blancas con un patio parquizado"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "3 dormitorios y 283 m² de terreno",
+   "microsite": {
+    "url": "https://casaquintana.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.296461,
+   "lng": -65.111041,
+   "valueForSale": {
+    "amount": 68000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "castelli",
+   "title": "Dúplex en alquiler",
+   "address": "Castelli 97",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DUPLEX",
+   "imgCover": {
+    "thumbWeb": "img/lg/castelli.jpg",
+    "alt": "Living y cocina integrados con mucha luz natural"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios, 2 baños y patio",
+   "microsite": {
+    "url": "https://castelli.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.301924,
+   "lng": -65.096621,
+   "valueForRent": {
+    "amount": 950000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "juanjosevalle375",
+   "title": "Depto con patio propio",
+   "address": "Gral. Juan José Valle 375",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/juanjosevalle375.jpg",
+    "alt": "Patio con césped y pérgola de madera"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios y 90 m²",
+   "microsite": {
+    "url": "https://juanjosevalle375.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.2939106,
+   "lng": -65.0885858,
+   "valueForRent": {
+    "amount": 680000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "musters725",
+   "title": "Casa a 500 m del mar",
+   "address": "Jorge Musters 725",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/musters725.jpg",
+    "alt": "Frente de ladrillo a la vista con reja y techo de chapa"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "4 ambientes, 3 dormitorios y patio",
+   "microsite": {
+    "url": "https://musters725.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.311078,
+   "lng": -65.049205,
+   "valueForSale": {
+    "amount": 110000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "casacentenario",
+   "title": "Casa con parque y local",
+   "address": "Centenario 437",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/casacentenario.jpg",
+    "alt": "Frente de la casa con puerta de madera y paredes verdes"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios, terreno de 297 m² y local propio",
+   "microsite": {
+    "url": "https://casacentenario.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.313428,
+   "lng": -65.041323,
+   "valueForSale": {
+    "amount": 180000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "mendoza",
+   "title": "Casa con pileta",
+   "address": "Mendoza 1042",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/mendoza.jpg",
+    "alt": "Pileta con deck de madera y quincho"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "Parrilla y 3.058 m² de terreno",
+   "microsite": {
+    "url": "https://mendoza.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.290017,
+   "lng": -65.124734,
+   "valueForSale": {
+    "amount": 250000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "chacra51",
+   "title": "Dos macizos forestados",
+   "address": "Chacra 51",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CHACRA",
+   "imgCover": {
+    "thumbWeb": "img/lg/chacra51.jpg",
+    "alt": "Chacra con álamos y pastizal sobre el brazo del río Chubut"
+   },
+   "specs": {
+    "bedrooms": 0
+   },
+   "summary": "9,85 ha sobre el brazo del río Chubut",
+   "microsite": {
+    "url": "https://chacra51.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   }
+  },
+  {
+   "_id": "loveparry",
+   "title": "Dúplex con patio",
+   "address": "Love Parry 159",
+   "locality": {
+    "_id": "trelew",
+    "name": "Trelew"
+   },
+   "type": "DUPLEX",
+   "imgCover": {
+    "thumbWeb": "img/lg/loveparry.jpg",
+    "alt": "Frente de ladrillo a la vista con el acceso al dúplex"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "4 ambientes y fogón",
+   "microsite": {
+    "url": "https://loveparry.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.261502,
+   "lng": -65.290815,
+   "valueForSale": {
+    "amount": 70000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "dptospueyrredon",
+   "title": "Dos departamentos en esquina",
+   "address": "Pueyrredón 688",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/dptospueyrredon.jpg",
+    "alt": "Esquina de la calle donde está el lote"
+   },
+   "specs": {
+    "bedrooms": 1
+   },
+   "summary": "Lote de 281,61 m² con dos unidades independientes",
+   "microsite": {
+    "url": "https://dptospueyrredon.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.30366,
+   "lng": -65.100617,
+   "valueForSale": {
+    "amount": 80000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "duplexribera",
+   "title": "Dúplex en Ribera Norte",
+   "address": "Pavón 1186",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "DUPLEX",
+   "imgCover": {
+    "thumbWeb": "img/lg/duplexribera.jpg",
+    "alt": "Frente del dúplex con paredes claras y ventanas"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios, 2 baños y 80 m² cubiertos",
+   "microsite": {
+    "url": "https://duplexribera.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.293782,
+   "lng": -65.026214,
+   "valueForSale": {
+    "amount": 80000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "goicochea1399",
+   "title": "Casa en esquina con quincho",
+   "address": "Juan Goicochea 1399",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/goicochea1399.jpg",
+    "alt": "Pasillo con pared de ladrillo y comedor al fondo"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "3 dormitorios, 2 baños y 105 m²",
+   "microsite": {
+    "url": "https://goicochea1399.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.300214,
+   "lng": -65.075206,
+   "valueForSale": {
+    "amount": 75000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "castelli379",
+   "title": "Casa con sector comercial",
+   "address": "Castelli 379",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/castelli379.jpg",
+    "alt": "Living comedor con mesa y sillones"
+   },
+   "specs": {
+    "bedrooms": 3
+   },
+   "summary": "3 dormitorios, 202 m² cubiertos y terreno de 360 m²",
+   "microsite": {
+    "url": "https://castelli379.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.301666,
+   "lng": -65.096514,
+   "valueForSale": {
+    "amount": 130000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "mendoza836",
+   "title": "Casa con parque",
+   "address": "Mendoza 836, Barrio La Isla",
+   "locality": {
+    "_id": "rawson",
+    "name": "Rawson"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/mendoza836.jpg",
+    "alt": "Parcela con césped y galpón al fondo"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "Parcela de 1.800 m²",
+   "microsite": {
+    "url": "https://mendoza836.ipropietas.com.ar",
+    "status": "DISPONIBLE_VENTA",
+    "operations": [
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.290234,
+   "lng": -65.125393,
+   "valueForSale": {
+    "amount": 140000,
+    "currency": "USD"
+   }
+  },
+  {
+   "_id": "edificioalternativa",
+   "title": "Depto frente al mar",
+   "address": "Edificio Alternativa",
+   "locality": {
+    "_id": "puerto-rawson",
+    "name": "Puerto Rawson"
+   },
+   "type": "DEPARTAMENTO",
+   "imgCover": {
+    "thumbWeb": "img/lg/edificioalternativa.jpg",
+    "alt": "Living con puerta ventana al balcón y el mar a lo lejos"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "2 dormitorios y cochera",
+   "microsite": {
+    "url": "https://edificioalternativa.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER",
+    "operations": [
+     "rent"
+    ],
+    "available": true
+   },
+   "lat": -43.338958,
+   "lng": -65.056618,
+   "valueForRent": {
+    "amount": 850000,
+    "currency": "ARS"
+   }
+  },
+  {
+   "_id": "casadelariberaii",
+   "title": "Casa en Playa Unión",
+   "address": "Casa de la Ribera II",
+   "locality": {
+    "_id": "playa-union",
+    "name": "Playa Unión"
+   },
+   "type": "CASA",
+   "imgCover": {
+    "thumbWeb": "img/lg/casadelariberaii.jpg",
+    "alt": "Frente de una casa de una planta con volúmenes grises"
+   },
+   "specs": {
+    "bedrooms": 2
+   },
+   "summary": "Una planta, 2 dormitorios, 2 baños",
+   "microsite": {
+    "url": "https://casadelariberaii.ipropietas.com.ar",
+    "status": "DISPONIBLE_ALQUILER_VENTA",
+    "operations": [
+     "rent",
+     "sale"
+    ],
+    "available": true
+   },
+   "lat": -43.293728,
+   "lng": -65.027044,
+   "valueForRent": {
+    "amount": 680000,
+    "currency": "ARS"
+   }
+  }
+ ],
+ "meta": {
+  "source": "snapshot",
+  "note": "Respaldo del catálogo anterior. Se usa sólo si la API no responde o aún no tiene micrositios."
+ }
+}

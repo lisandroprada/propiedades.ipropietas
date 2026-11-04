@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Propiedades en venta y alquiler · Propietas Inmobiliaria</title>
+<meta name="description" content="Propiedades en venta y alquiler en Rawson y Trelew, Chubut. Casas, dúplex, departamentos y campos. Filtrá por dormitorios, tipo y precio, o mirá el mapa. Propietas Inmobiliaria.">
+<meta name="theme-color" content="#edf2fa">
+<meta property="og:title" content="Propiedades en venta y alquiler · Propietas Inmobiliaria">
+<meta property="og:description" content="Rawson y Trelew, Chubut. Mirá las fotos, el mapa y los datos de cada propiedad.">
+<meta property="og:type" content="website">
+<link rel="icon" href="logo.svg" type="image/svg+xml">
+<style>
+{{CSS}}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="https://www.ipropietas.com.ar" aria-label="Propietas Inmobiliaria"><img src="logo.svg" alt="Propietas Inmobiliaria"></a>
+  <a class="wa-icon" href="https://wa.me/5492804503151?text=Hola%2C%20vi%20sus%20propiedades%20en%20Instagram%20y%20quiero%20consultar." aria-label="Escribinos por WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg></a>
+</header>
+
+<div class="tabs" role="group" aria-label="Operación"><button type="button" data-g="op" data-v="todas" aria-pressed="true">Todas <i></i></button><button type="button" data-g="op" data-v="alquiler" aria-pressed="false">Alquiler <i></i></button><button type="button" data-g="op" data-v="venta" aria-pressed="false">Venta <i></i></button></div>
+
+<div class="stick" id="stick">
+  <div class="stick-in">
+    <div class="cats" id="cats" role="group" aria-label="Tipo de propiedad">{{CATS}}</div>
+    <button type="button" class="fbtn" data-open-filters aria-label="Filtros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><span>Filtros</span><b class="fcount" hidden></b></button>
+  </div>
+</div>
+
+<main>
+  <div class="resbar"><p id="rescount" aria-live="polite"></p><button type="button" class="linkbtn" id="clearlink" hidden>Limpiar filtros</button></div>
+  <ul class="list" id="list">{{LIST}}</ul>
+  <div class="empty" id="empty" hidden>
+    <p><strong>No hay propiedades con estos filtros.</strong></p>
+    <p>Probá con otra zona, menos dormitorios o un precio más alto.</p>
+    <button type="button" class="btn-solid" id="emptyclear">Limpiar filtros</button>
+  </div>
+
+  <a class="more" href="https://www.ipropietas.com.ar">Ver todas las propiedades <span>ipropietas.com.ar</span></a>
+
+  <a class="wa" href="https://wa.me/5492804503151?text=Hola%2C%20vi%20sus%20propiedades%20en%20Instagram%20y%20quiero%20consultar.">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.4 7.4L3 20.5l1.7-5.4A8.5 8.5 0 1 1 21 11.5Z"/></svg>
+    Escribinos por WhatsApp
+  </a>
+
+  <footer>
+    <b>Propietas Inmobiliaria</b><br>
+    Gregorio Mayo 106, Rawson, Chubut<br>
+    Lisandro E. Prada Toledo · Matrícula N° 117 · COCICH
+  </footer>
+</main>
+
+<button type="button" class="fab" id="fabmap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Mapa</button>
+
+<div class="mapview" id="mapview" hidden role="dialog" aria-label="Mapa de propiedades">
+  <div class="mapbar">
+    <div class="maptop">
+      <button type="button" class="mapback" id="mapback"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>Lista</button>
+      <div class="tabs tabs--sm" role="group" aria-label="Operación"><button type="button" data-g="op" data-v="todas" aria-pressed="true">Todas</button><button type="button" data-g="op" data-v="alquiler" aria-pressed="false">Alquiler</button><button type="button" data-g="op" data-v="venta" aria-pressed="false">Venta</button></div>
+      <button type="button" class="fbtn fbtn--icon" data-open-filters aria-label="Filtros"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/></svg><b class="fcount" hidden></b></button>
+    </div>
+  </div>
+  <div class="mapwrap">
+    <div class="mapcanvas" id="mapcanvas"></div>
+    <button type="button" class="maploc" id="maploc">Cerca de mí</button>
+    <div class="mapsheet" id="mapsheet"><div class="mapcards" id="mapcards"></div></div>
+    <p class="mapcount" id="mapcount" aria-live="polite"></p>
+  </div>
+</div>
+
+<dialog class="fsheet" id="fsheet" aria-labelledby="fs-title">
+  <div class="fs-head"><h2 id="fs-title" tabindex="-1" autofocus>Filtros</h2><button type="button" class="fs-x" data-close aria-label="Cerrar">×</button></div>
+  <div class="fs-body">
+    <section><h3>Operación</h3><div class="chips"><button type="button" data-g="op" data-v="todas" aria-pressed="true">Todas</button><button type="button" data-g="op" data-v="alquiler" aria-pressed="false">Alquiler</button><button type="button" data-g="op" data-v="venta" aria-pressed="false">Venta</button></div></section>
+    <section><h3>Tipo de propiedad</h3><div class="chips" id="fs-tipo">{{CHIPS_TIPO}}</div></section>
+    <section id="fs-dorm-sec"><h3>Dormitorios</h3><div class="seg" id="fs-dorm">{{DORM}}</div></section>
+    <section><h3>Precio máximo</h3><div class="chips" id="fs-prices"></div><p class="hint" id="fs-pricehint">Elegí Alquiler o Venta para filtrar por precio.</p></section>
+    <section id="fs-zone-sec"><h3>Zona</h3><div class="chips" id="fs-zone">{{ZONES}}</div></section>
+  </div>
+  <div class="fs-foot"><button type="button" class="linkbtn" id="fs-clear">Limpiar todo</button><button type="button" class="btn-solid" id="fs-apply" data-close>Ver propiedades</button></div>
+</dialog>
+
+<dialog class="calc" id="calc" aria-labelledby="calc-title">
+  <div class="calc-head">
+    <h3 id="calc-title" tabindex="-1" autofocus>Condiciones de alquiler</h3>
+    <button type="button" class="calc-x" aria-label="Cerrar" data-close>×</button>
+  </div>
+  <p class="calc-for" id="calc-for"></p>
+  <h4>Requisitos</h4>
+  <ul>
+    <li>Contrato de 2 años.</li>
+    <li>El alquiler se actualiza por ICL (BCRA) cada 4 meses (según el contrato también puede ser cada 3 o 6).</li>
+  </ul>
+  <h4>Al firmar</h4>
+  <div class="calc-row"><span>Primer mes de alquiler</span><span id="c-rent"></span></div>
+  <div class="calc-row"><span>Depósito en garantía (1 mes)</span><span id="c-dep"></span></div>
+  <div class="calc-row"><span>Honorarios inmobiliaria (2%)</span><span id="c-fee"></span></div>
+  <div class="calc-row calc-total"><span>Total al firmar</span><span id="c-tot"></span></div>
+  <p class="calc-note">El depósito se devuelve al finalizar el contrato. Con ajuste por ICL cada 4 meses, el alquiler se actualiza según el índice publicado y el monto mensual va a ser mayor al inicial. Honorarios calculados sobre 24 meses a alquiler inicial. Valores orientativos, sujetos a cambio sin previo aviso.</p>
+  <a class="calc-wa" id="calc-wa" href="#" target="_blank" rel="noopener">Consultar por WhatsApp</a>
+</dialog>
+
+<script>
+{{CORE_JS}}
+</script>
+<script>
+{{CALC_JS}}
+</script>
+<script>
+{{APP_JS}}
+</script>
+<script>
+{{MAP_JS}}
+</script>
+<script>
+{{LIVE_JS}}
+</script>
+</body>
+</html>
