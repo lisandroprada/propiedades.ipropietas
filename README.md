@@ -24,4 +24,7 @@ Los filtros (tipo, dormitorios, zona, escalones de precio) se calculan de los da
 ## Publicar
 `vercel deploy --prod --yes` (proyecto `propietas-links`; corre el build). Para que un cambio en Rentia se refleje sin tocar nada, el navegador ya lo trae en vivo; el redeploy sólo mejora la carga inicial y el SEO.
 
+## Redeploy automático
+Crear en Vercel (proyecto `propietas-links` → Settings → Git → Deploy Hooks) un hook y cargarlo en el backend como `CATALOG_DEPLOY_HOOK_URL`. Cuando alguien edita un micrositio en el backoffice, Rentia dispara un único redeploy 30 s después del último cambio.
+
 `CATALOG_API=<url> node build.mjs` apunta el build a otra API (por ejemplo local).
